@@ -1,0 +1,10 @@
+version: "3"
+services:
+  hail:
+    build: .
+    container_name: hail
+    volumes:
+      - /data/vcf:/opt/projects/data
+      - ./:/opt/projects
+    ports:
+      - 8888:8888
